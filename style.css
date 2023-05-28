@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bebas Neue', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 36px;
+  letter-spacing: 5px;
+}
+
+/* loader */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+.loader img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Image Container */
+.image-container {
+  margin: 10px 30%;
+}
+
+/* Image */
+.image-container img {
+  width: 100%;
+  margin-top: 10px;
+}
+.image-container img:hover {
+  opacity: 0.8;
+}
+/* Media Querie for smaill phones */
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  .image-container {
+    margin: 10px;
+  }
+}
