@@ -9,11 +9,12 @@ let isInitialLoad = true
 
 // Unsplash API
 let initialCount = 5
+let collectionID = '895539'
 const API_KEY = 'Vlvt93t99HIeHZaZV3b-8sRSdQuJ1H-gcYZqsuZdyyk'
-let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${API_KEY}&count=${initialCount}`
+let apiUrl = `https://api.unsplash.com/photos/random?collections=${collectionID}&client_id=${API_KEY}&count=${initialCount}`
 
 function updateAPIURLWithNewCount(picCount) {
-  apiUrl = `https://api.unsplash.com/photos/random?client_id=${API_KEY}&count=${picCount}`
+  apiUrl = `https://api.unsplash.com/photos/random?collections=${collectionID}&client_id=${API_KEY}&count=${picCount}`
 }
 // Check if all images were loaded
 function imageLoaded() {
